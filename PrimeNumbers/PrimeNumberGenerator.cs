@@ -13,7 +13,7 @@ namespace PrimeNumbers
             int potentialPrime = 3;
             while (primes.Count < desiredNumberOfPrimes)
             {
-                var isDivisible = DivisorsLocator.DoesAnyNumberEvenlyDividePrimeNumber(potentialPrime);
+                var isDivisible = new DivisorsLocator().DoesAnyNumberEvenlyDividePrimeNumber(potentialPrime);
                 if (!isDivisible)
                     primes.Add(potentialPrime);
 

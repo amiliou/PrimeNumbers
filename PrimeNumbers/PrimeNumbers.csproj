@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DivisorsLocator.cs" />
+    <Compile Include="IDivisorsLocator.cs" />
     <Compile Include="PrimeNumberGenerator.cs" />
     <Compile Include="PrimeNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

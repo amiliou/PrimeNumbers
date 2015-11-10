@@ -2,9 +2,9 @@
 
 namespace PrimeNumbers
 {
-    public class DivisorsLocator
+    public class DivisorsLocator : IDivisorsLocator
     {
-        internal static bool DoesAnyNumberEvenlyDividePrimeNumber(int nextPotentialPrime)
+        public bool DoesAnyNumberEvenlyDividePrimeNumber(int nextPotentialPrime)
         {
             return false;
         }
