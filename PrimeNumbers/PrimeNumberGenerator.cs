@@ -5,7 +5,14 @@ namespace PrimeNumbers
 {
     public class PrimeNumberGenerator
     {
-        public static IList<int> Generate(int desiredNumberOfPrimes)
+        private readonly IDivisorsLocator _divisorsLocator;
+
+        public PrimeNumberGenerator(IDivisorsLocator divisorsLocator)
+        {
+            _divisorsLocator = divisorsLocator;
+        }
+
+        public IList<int> Generate(int desiredNumberOfPrimes)
         {
             var primes = new List<int>();
             primes.Add(2);
@@ -13,7 +20,7 @@ namespace PrimeNumbers
             int potentialPrime = 3;
             while (primes.Count < desiredNumberOfPrimes)
             {
-                var isDivisible = new DivisorsLocator().DoesAnyNumberEvenlyDividePrimeNumber(potentialPrime);
+                var isDivisible = _divisorsLocator.DoesAnyNumberEvenlyDividePrimeNumber(potentialPrime);
                 if (!isDivisible)
                     primes.Add(potentialPrime);
 
