@@ -9,9 +9,8 @@ namespace PrimeNumbers
         {
             var primes = new List<int>();
 
-            if (limit == 1)
-                return primes;
-
+            primes.Add(2);
+            
 
             return primes;
 
