@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DivisorsLocatorTests.cs" />
+    <Compile Include="GridBuilderTests.cs" />
     <Compile Include="PrimeNumberGeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
