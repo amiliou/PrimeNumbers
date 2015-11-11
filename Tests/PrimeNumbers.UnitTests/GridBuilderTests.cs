@@ -45,5 +45,16 @@ namespace PrimeNumbers.UnitTests
 
             Assert.That(actualGrid, Is.EqualTo(expectedGrid));           
         }
+
+        [Test]
+        public void Should_get_a_N_plus_1_x_N_plus_1_grid_with_primes_and_multiplications_for_first_10_primes_only()
+        {
+            var primes = new int[12] { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+
+            var actualGrid = GridBuilder.Build(primes);
+
+            Assert.That(actualGrid[10][10], Is.EqualTo(841));
+            Assert.That(actualGrid[11][11], Is.EqualTo(0));
+        }
     }
 }

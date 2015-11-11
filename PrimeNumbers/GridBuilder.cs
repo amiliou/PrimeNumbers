@@ -19,7 +19,7 @@ namespace PrimeNumbers
             var grid = new int[dimension][];
 
             for (var i = 0; i < dimension; i++)
-                grid[i] = new int[dimension + 1];
+                grid[i] = new int[dimension];
 
             return grid;
         }
@@ -35,9 +35,9 @@ namespace PrimeNumbers
 
         private static void FillMultiplicationResultsBetweenFirstRowAndColumn(int[] primes, int[][] grid)
         {
-            for (var i = 1; i <= primes.Length && i < 10; i++)
+            for (var i = 1; i <= primes.Length && i <= 10; i++)
             {
-                for (var j = 1; j <= primes.Length && j < 10; j++)
+                for (var j = 1; j <= primes.Length && j <= 10; j++)
                 {
                     grid[i][j] = grid[0][i] * grid[j][0];
                 }
