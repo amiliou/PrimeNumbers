@@ -52,7 +52,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PrimeNumbers.csproj">
+    <ProjectReference Include="..\..\PrimeNumbers\PrimeNumbers.csproj">
       <Project>{d2d6df40-27d9-4169-a82f-82a1c2c52657}</Project>
       <Name>PrimeNumbers</Name>
     </ProjectReference>
