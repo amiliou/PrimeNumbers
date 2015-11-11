@@ -20,7 +20,7 @@ namespace PrimeNumbers.UnitTests
                 new [] {7, 0, 0, 0, 0}
             };
 
-            var actualGrid = GridBuilder.Build(primes);
+            var actualGrid = new GridBuilder().Build(primes);
 
             Assert.That(actualGrid[0][1], Is.EqualTo(2));
             Assert.That(actualGrid[1][0], Is.EqualTo(2));
@@ -41,7 +41,7 @@ namespace PrimeNumbers.UnitTests
                 new [] {7, 14, 21, 35, 49}
             };
 
-            var actualGrid = GridBuilder.Build(primes);
+            var actualGrid = new GridBuilder().Build(primes);
 
             Assert.That(actualGrid, Is.EqualTo(expectedGrid));           
         }
@@ -51,7 +51,7 @@ namespace PrimeNumbers.UnitTests
         {
             var primes = new int[12] { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
-            var actualGrid = GridBuilder.Build(primes);
+            var actualGrid = new GridBuilder().Build(primes);
 
             Assert.That(actualGrid[10][10], Is.EqualTo(841));
             Assert.That(actualGrid[11][11], Is.EqualTo(0));

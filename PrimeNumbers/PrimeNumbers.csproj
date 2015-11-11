@@ -46,8 +46,11 @@
     <Compile Include="DivisorsLocator.cs" />
     <Compile Include="GridBuilder.cs" />
     <Compile Include="IDivisorsLocator.cs" />
+    <Compile Include="IGridBuilder.cs" />
+    <Compile Include="IPrimeNumberGenerator.cs" />
     <Compile Include="PrimeNumberGenerator.cs" />
     <Compile Include="PrimeNumbers.cs" />
+    <Compile Include="PrimeNumberService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

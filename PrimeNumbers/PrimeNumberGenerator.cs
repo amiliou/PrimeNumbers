@@ -2,7 +2,7 @@
 
 namespace PrimeNumbers
 {
-    public class PrimeNumberGenerator
+    public class PrimeNumberGenerator : IPrimeNumberGenerator
     {
         private readonly IDivisorsLocator _divisorsLocator;
 
@@ -11,7 +11,7 @@ namespace PrimeNumbers
             _divisorsLocator = divisorsLocator;
         }
 
-        public IList<int> Generate(int desiredNumberOfPrimes)
+        public int[] Generate(int desiredNumberOfPrimes)
         {
             var primes = new List<int>();
             primes.Add(2);
@@ -26,7 +26,7 @@ namespace PrimeNumbers
                 potentialPrime = GetNextOddNumber(potentialPrime);
             }
           
-            return primes;
+            return primes.ToArray();
         }
 
         private static int GetNextOddNumber(int potentialPrime)

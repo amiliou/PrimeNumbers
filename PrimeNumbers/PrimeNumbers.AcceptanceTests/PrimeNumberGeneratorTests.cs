@@ -25,7 +25,7 @@ namespace PrimeNumbers.AcceptanceTests
         {
            var actualPrimes = _primeNumberGenerator.Generate(desiredNumberOfPrimes);
 
-            Assert.That(actualPrimes.Count, Is.EqualTo(desiredNumberOfPrimes));
+            Assert.That(actualPrimes.Length, Is.EqualTo(desiredNumberOfPrimes));
             Assert.That(actualPrimes, Is.EquivalentTo(expectedPrimes));
         }
     }

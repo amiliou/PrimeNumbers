@@ -2,9 +2,9 @@
 
 namespace PrimeNumbers
 {
-    public class GridBuilder
+    public class GridBuilder : IGridBuilder
     {
-        public static int[][] Build(int[] primes)
+        public int[][] Build(int[] primes)
         {
             int[][] grid = ConstructGridWithDimension(primes.Length + 1);
 

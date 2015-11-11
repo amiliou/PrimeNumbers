@@ -23,7 +23,7 @@ namespace PrimeNumbers.UnitTests
             
             var primes = _primeNumberGenerator.Generate(desiredNumberOfPrimes);
 
-            Assert.That(primes.Count, Is.EqualTo(desiredNumberOfPrimes));
+            Assert.That(primes.Length, Is.EqualTo(desiredNumberOfPrimes));
             Assert.That(primes[0], Is.EqualTo(2));
         }
 
@@ -38,7 +38,7 @@ namespace PrimeNumbers.UnitTests
 
             var actualPrimes = _primeNumberGenerator.Generate(desiredNumberOfPrimes);
 
-            Assert.That(actualPrimes.Count, Is.EqualTo(desiredNumberOfPrimes));
+            Assert.That(actualPrimes.Length, Is.EqualTo(desiredNumberOfPrimes));
             Assert.That(actualPrimes, Is.EquivalentTo(expectedPrimes));
         }
     }
