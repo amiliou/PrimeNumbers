@@ -51,7 +51,6 @@
     <Compile Include="DivisorsLocatorTests.cs" />
     <Compile Include="GridBuilderTests.cs" />
     <Compile Include="PrimeNumberGeneratorTests.cs" />
-    <Compile Include="PrimeNumbersServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
